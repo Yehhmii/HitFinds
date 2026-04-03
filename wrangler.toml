@@ -1,0 +1,11 @@
+name = "hitfinds"
+compatibility_date = "2025-01-01"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".open-next/worker"
+
+[vars]
+NEXT_PUBLIC_APP_URL = "https://hitfinds.workers.dev"
+
+[[rules]]
+type = "ESModule"
+globs = ["**/*.js"]
