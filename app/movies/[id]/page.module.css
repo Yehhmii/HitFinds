@@ -1,0 +1,189 @@
+.page {
+  min-height: calc(100vh - 60px);
+  padding-bottom: 80px;
+}
+
+.backdropWrapper {
+  position: relative;
+  height: 420px;
+  overflow: hidden;
+}
+
+.backdrop {
+  object-fit: cover;
+  object-position: center top;
+  filter: brightness(0.35);
+}
+
+.backdropGradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    var(--bg) 100%
+  );
+}
+
+.breadcrumbRow {
+  padding: 24px 0 0;
+}
+
+.content {
+  display: flex;
+  gap: 40px;
+  margin-top: -180px;
+  position: relative;
+  z-index: 1;
+  padding-top: 24px;
+  align-items: flex-start;
+}
+
+.posterWrapper {
+  position: relative;
+  flex-shrink: 0;
+  width: 260px;
+  aspect-ratio: 2 / 3;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-elevated);
+  border: 1px solid var(--border);
+}
+
+.poster {
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+  min-width: 0;
+  padding-top: 8px;
+}
+
+.genreRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.genre {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-secondary);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 0.875rem;
+}
+
+.rating {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.votes {
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 4px;
+  font-size: 0.8rem;
+}
+
+.dot {
+  color: var(--text-muted);
+}
+
+.year {
+  color: var(--text-secondary);
+}
+
+.meta {
+  color: var(--text-secondary);
+}
+
+.overview {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+  max-width: 680px;
+  margin-bottom: 28px;
+}
+
+.statsRow {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-muted);
+}
+
+.statValue {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.castSection {
+  margin-top: 56px;
+}
+
+.sectionTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .backdropWrapper {
+    height: 260px;
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: -80px;
+    gap: 20px;
+  }
+
+  .posterWrapper {
+    width: 140px;
+  }
+}
