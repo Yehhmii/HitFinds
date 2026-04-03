@@ -8,10 +8,10 @@ export default function MovieLoading() {
         <div className={styles.backdropGradient} />
       </div>
       <div className="container">
-        <div className={styles.breadcrumbRow}>
-          <div className="skeleton" style={{ height: "14px", width: "180px" }} />
-        </div>
         <div className={styles.content}>
+          <div className={styles.breadcrumbRow}>
+            <div className="skeleton" style={{ height: "14px", width: "180px" }} />
+          </div>
           <div
             className="skeleton"
             style={{

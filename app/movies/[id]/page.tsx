@@ -70,16 +70,16 @@ export default async function MoviePage({ params }: MoviePageProps) {
       </div>
 
       <div className="container">
-        <div className={styles.breadcrumbRow}>
-          <Breadcrumb
-            items={[
-              { label: "Movies", href: "/" },
-              { label: movie.title },
-            ]}
-          />
-        </div>
-
         <div className={styles.content}>
+          <div className={styles.breadcrumbRow}>
+            <Breadcrumb
+              items={[
+                { label: "Movies", href: "/" },
+                { label: movie.title },
+              ]}
+            />
+          </div>
+
           <div className={styles.posterWrapper}>
             <Image
               src={getPosterUrl(movie.poster_path, "w500")}
