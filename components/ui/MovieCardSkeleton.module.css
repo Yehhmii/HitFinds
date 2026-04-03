@@ -1,0 +1,68 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+
+.poster {
+  aspect-ratio: 2 / 3;
+  width: 100%;
+}
+
+.info {
+  padding: 12px 14px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.titleLine {
+  height: 14px;
+  width: 90%;
+}
+
+.titleLineShort {
+  height: 14px;
+  width: 60%;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.metaChip {
+  height: 12px;
+  width: 36px;
+}
+
+.metaChipSm {
+  height: 12px;
+  width: 60px;
+}
